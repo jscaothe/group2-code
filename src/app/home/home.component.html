@@ -1,0 +1,8 @@
+Weklcome back
+<div *ngIf="(auth.loggedIn | async)">
+	<ul class="list-group list-group-flush">
+		<li class="list-group-item" *ngFor="let member of members">
+			{{member.employee_name}}
+		</li>
+	</ul>
+</div>
